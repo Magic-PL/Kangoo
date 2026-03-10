@@ -1,0 +1,88 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8" />
+  <meta lang="PL" />
+  <meta name="viewport" content="width=device-width,initial-scale=1 " />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <title>Kangoo Jumping</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <a href="index.html">
+        <img id="logo" src="img/logo.png" alt="logo" width="100" height="100" />
+      </a>
+      <nav>
+        <ul class="navmenu">
+          <li>
+            <a href="index.html" class="link"><b>Glowna</b></a>
+          </li>
+          <li>
+            <a href="about.html" class="link"><b>O Kangoo Jumping</b></a>
+          </li>
+          <li>
+            <a href="gallery.html" class="link"><b>Gallery</b></a>
+          </li>
+          <li>
+            <a href="" class="link"><b>Grafik</b></a>
+          </li>
+          <li>
+            <a href="kontakty.html" class="link"><b>Kontakty</b></a>
+          </li>
+        </ul>
+        <div class="nav-button" onclick="myFunction(this)">
+          <div class="bar" id="barr"></div>
+          <div class="bar1" id="barr1"></div>
+          <div class="bar2" id="barr2"></div>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d575.3958474407974!2d19.009240269630848!3d50.39764185311889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDIzJzUxLjUiTiAxOcKwMDAnMzUuNiJF!5e1!3m2!1suk!2spl!4v1769868839915!5m2!1suk!2spl"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+<a href="https://wa.me/message/CRBPXTMWVTL4N1" target="_blank">Watsapp</a>
+    </div>
+    <div class="footer">
+      <div class="footcontent">
+        <h3>Lokalizacja</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+          eveniet ab veritatis aliquid ipsum porro, deserunt enim unde
+          repudiandae! Et excepturi possimus laudantium modi, ducimus amet
+          consectetur sapiente atque nemo!
+        </p>
+      </div>
+      <div class="footcontent">
+        <h3>Telephony</h3>
+      </div>
+      <div class="footcontent">
+        <h3>Socmedia</h3>
+      </div>
+      <div class="footcontent">
+        <h3>Rights</h3>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    document
+      .querySelector(".nav-button")
+      .addEventListener("click", function () {
+        document.querySelector(".navmenu").classList.toggle("hide-show");
+      });
+  </script>
+</body>
